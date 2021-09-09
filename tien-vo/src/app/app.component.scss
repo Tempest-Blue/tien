@@ -1,67 +1,152 @@
-#resume {
-    margin-top: 20px;
+#header_navbar>div {
+  margin-right: 4em;
 }
 
-#learn {    
-    border: none;
-    bottom: 0;
-    font-size: 0.8em;
-    height: 8.5em;
+#resume {
+  margin-top: 20px;
+}
+
+#learn {
+  border: none;
+  bottom: 0;
+  font-size: 0.8em;
+  height: 8.5em;
+  left: 50%;
+  letter-spacing: 0.225em;
+  margin-left: -7.7em;
+  opacity: 1;
+  outline: 0;
+  padding-left: 0.225em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 16em;
+  z-index: 1;
+
+  &:after {
+    background-image: url('../assets/images/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 3em;
+    content: '';
+    display: block;
+    height: 1.5em;
     left: 50%;
-    letter-spacing: 0.225em;
-    margin-left: -7.7em;
-    opacity: 1;
-    outline: 0;
-    padding-left: 0.225em;
+    margin: 0 0 0 -2em;
     position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    width: 16em;
-    z-index: 1;
-    &:after {
-        background-image: url('../assets/images/arrow.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        bottom: 3em;
-        content: '';
-        display: block;
-        height: 1.5em;
-        left: 50%;
-        margin: 0 0 0 -2em;
-        position: absolute;
-        width: 1.5em;
+    width: 1.5em;
+  }
+}
+
+#current_stack {
+  background-color: #253246;
+
+  h4,
+  p {
+    color: #E8E6E3;
+  }
+
+  .section_title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      max-height: 40px;
     }
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  img {
+    max-height: 90px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+
+  div>div:nth-child(2)>div>div>img {
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+
+    &:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+      -o-transition: all 200ms linear;
+      -ms-transition: all 200ms linear;
+      transition: all 200ms linear;
+    }
+  }
+}
+
+#about {
+  background-color: #233044;
+
+  .about_area {
+    background-color: #233044;
+  }
 }
 
 #experience {
-    img {
-        max-height: 100px;
-    }
-    #companies {
-        >div {
-            img {
-                -webkit-transition:all 200ms linear; 
-                -moz-transition:all 200ms linear; 
-                -o-transition:all 200ms linear; 
-                -ms-transition:all 200ms linear; 
-                transition:all 200ms linear; 
-            }
-            &:hover {
-                cursor: pointer;
-                img {
-                    -webkit-transform: scale(1.2);
-                    -moz-transform: scale(1.2);
-                    -ms-transform: scale(1.2);
-                    -o-transform: scale(1.2);
-                    transform: scale(1.2);
-                    -webkit-transition:all 200ms linear; 
-                    -moz-transition:all 200ms linear; 
-                    -o-transition:all 200ms linear; 
-                    -ms-transition:all 200ms linear; 
-                    transition:all 200ms linear; 
-                }
-            }
+
+  background-color: #222E41;
+
+  img {
+    max-height: 100px;
+  }
+
+  #companies {
+    >div {
+      img {
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        img {
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2);
+          -webkit-transition: all 200ms linear;
+          -moz-transition: all 200ms linear;
+          -o-transition: all 200ms linear;
+          -ms-transition: all 200ms linear;
+          transition: all 200ms linear;
         }
+      }
     }
+  }
+}
+
+#projects {
+  background-color: #212D3F;
+}
+
+#blog {
+  background-color: #1F2B3C;
+}
+
+.about_image {
+  width: 40%;
 }

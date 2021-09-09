@@ -20,10 +20,12 @@ export class AppComponent {
   open_page(website: string ) {
     const website_mapping: {[key: string]: any} = {
       guaranteed_rate: 'https://www.rate.com/',
-      loanDepot: 'https://www.loandepot.com/',
+      loan_depot: 'https://www.loandepot.com/',
       wolin_design_group: 'https://wdgcorp.com/',
+      lambda: 'https://aws.amazon.com/lambda/',
+      dynamo_db: 'https://aws.amazon.com/dynamodb/',
+      api_gateway: 'https://aws.amazon.com/api-gateway/',
     };
-    console.log(website_mapping[website]);
     window.open(website_mapping[website]);
   }
 }

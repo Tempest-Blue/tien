@@ -36,13 +36,13 @@
                   <a class="page-scroll active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#current_tech">About</a>
+                  <a class="page-scroll" href="#current_stack">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#portfolio">Gallery</a>
+                  <a class="page-scroll" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="#blog">Blog</a>
@@ -68,7 +68,7 @@
               <a id="resume" href="../assets/docs/Tien Vo Resume.pdf" download class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1s">Download Resume</a>
               <!-- <a href="#features" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Learn
                 More</a> -->
-              <a id="learn" href="#features" class="secondary-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">Learn More</a>
+              <a id="learn" href="#current_stack" class="secondary-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">Learn More</a>
             </div>
           </div>
         </div>
@@ -78,74 +78,42 @@
 </section>
 
 
-<section id="current_tech" class="features_area pt-120">
+<section id="current_stack" class="features_area pt-120">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title text-center pb-25">
           <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Current Tech Stack</h4>
-          <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
-            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+          <img src="../assets/images/aws_white.png" alt="AWS" (click)="open_page('aws')" class="wow fadeInUp"  data-wow-duration="1.3s" data-wow-delay="0.2s">
         </div>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-7">
         <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-          <i class="lni lni-layers"></i>
-          <h4 class="features_title">Bootstrap 5 Based</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
+          <img src="../assets/images/aws_lambda.svg" alt="AWS Lambda" (click)="open_page('lambda')">
+          <h4 class="features_title">Lambda</h4>
+          <p>
+            Serverless compute service that runs your code in response to events such as HTTP requests via Amazon API Gateway, 
+            modifications to objects in Amazon S3 buckets, 
+            table updates in Amazon DynamoDB, 
+            and state transitions in AWS Step Functions.
           </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-7">
         <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
-          <i class="lni lni-layout"></i>
-          <h4 class="features_title">Clean Design</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
+          <img src="../assets/images/dynamo_db.svg" alt="Dynamo DB" (click)="open_page('dynamo_db')">
+          <h4 class="features_title">Dynamo DB</h4>
+          <p>NoSQL database service that provides fast and predictable performance with seamless scalability.</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-7">
         <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
-          <i class="lni lni-bolt"></i>
-          <h4 class="features_title">Cutting-edge Features</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
+          <img src="../assets/images/api_gateway.svg" alt="AWS API Gateway" (click)="open_page('api_gateway')">
+          <h4 class="features_title">API Gateway</h4>
+          <p>Service for developers to publish, maintain, monitor, secure, and operate APIs.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="about" class="pt-130">
-  <div class="about_area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="about_content pt-120 pb-130">
-            <div class="section_title pb">
-              <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">About Our
-                Creative Proccess</h4>
-              <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor
-                sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et erebum</p>
-              <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Lorem ipsum dolor
-                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                ut labore etdolore maali quyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores</p>
-            </div>
-            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.7s">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="about_image bg_cover wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.2s"
-      style="background-image: url(assets/images/about.jpg)">
-      <div class="image_content">
-        <h4 class="experience"><span>{{get_years_of_experience()}}</span> Years of Experience</h4>
       </div>
     </div>
   </div>
@@ -172,9 +140,9 @@
           <!-- <p></p> -->
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" (click)="open_page('loanDepot')">
+      <div class="col-lg-4 col-md-6" (click)="open_page('loan_depot')">
         <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
-          <img src="../assets/images/loanDepot.png" alt="loanDepot">
+          <img src="../assets/images/loan_depot.png" alt="loanDepot">
           <h4 class="features_title">2019 - 2021</h4>
           <!-- <p></p> -->
         </div>
@@ -214,13 +182,36 @@
   </div>
 </section>
 
+<section id="about" class="pt-130">
+  <div class="about_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about_content pt-120 pb-130">
+            <div class="section_title pb">
+              <!-- <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Languages</h4> -->
+              <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s"><i class="lni lni-github"></i></p>
+              <img src="../assets/images/servicenow.png" alt="ServiceNow" (click)="open_page('servicenow')">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about_image bg_cover wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.2s"
+      style="background-image: url(assets/images/about.jpg)">
+      <div class="image_content">
+        <h4 class="experience"><span>{{get_years_of_experience()}}</span> Years of Experience</h4>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section id="portfolio" class="portfolio_area pt-120">
+<section id="projects" class="portfolio_area pt-120">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title text-center pb-60">
-          <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Our Portfolio</h4>
+          <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Projects</h4>
           <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
             amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
         </div>
@@ -229,7 +220,7 @@
   </div>
   <div class="portfolio_wrapper d-flex flex-wrap">
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-      <img src="assets/images/portfolio-1.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-1.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -238,7 +229,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
-      <img src="assets/images/portfolio-2.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-2.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -247,7 +238,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
-      <img src="assets/images/portfolio-3.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-3.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -256,7 +247,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-      <img src="assets/images/portfolio-4.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-4.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -265,7 +256,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-      <img src="assets/images/portfolio-5.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-5.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -274,7 +265,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
-      <img src="assets/images/portfolio-6.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-6.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -283,7 +274,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
-      <img src="assets/images/portfolio-7.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-7.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
@@ -292,7 +283,7 @@
       </div>
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-      <img src="assets/images/portfolio-8.jpg" alt="portfolio">
+      <img src="assets/images/portfolio-8.jpg" alt="projects">
       <div class="portfolio_content">
         <ul class="meta">
           <li><a href="#"><i class="lni lni-link"></i></a></li>
