@@ -19,6 +19,7 @@ export class AppComponent {
 
   open_page(website: string ) {
     const website_mapping: {[key: string]: any} = {
+      aws: 'https://aws.amazon.com/?nc2=h_lg',
       guaranteed_rate: 'https://www.rate.com/',
       loan_depot: 'https://www.loandepot.com/',
       wolin_design_group: 'https://wdgcorp.com/',

@@ -70,7 +70,7 @@
     transition: all 200ms linear;
   }
 
-  div>div:nth-child(2)>div>div>img {
+  div>div>div>div>img {
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -o-transition: all 200ms linear;
@@ -101,7 +101,7 @@
   }
 }
 
-#experience {
+#history {
 
   background-color: #222E41;
 
@@ -139,8 +139,13 @@
   }
 }
 
-#projects {
+#interests {
   background-color: #212D3F;
+
+  .small_image {
+    height: 100%;
+    width: auto;
+  }
 }
 
 #blog {
@@ -149,4 +154,15 @@
 
 .about_image {
   width: 40%;
+}
+
+.pt-120 {
+  padding-bottom: 120px;
+}
+
+.hero_content {
+  p {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
 }
