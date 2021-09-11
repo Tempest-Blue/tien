@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tien-vo';
+  closeModal: any;
+  constructor() {}
 
-  
   ngOnInit() {
   }
 
@@ -17,8 +19,13 @@ export class AppComponent {
     return (current_year - 2016);
   }
 
-  open_page(website: string ) {
-    const website_mapping: {[key: string]: any} = {
+
+  get_animated_class(class_name: string) {
+    return `animate__animated animate__${class_name}`;
+  }
+
+  open_page(website: string) {
+    const website_mapping: { [key: string]: any } = {
       aws: 'https://aws.amazon.com/?nc2=h_lg',
       guaranteed_rate: 'https://www.rate.com/',
       loan_depot: 'https://www.loandepot.com/',
@@ -29,4 +36,6 @@ export class AppComponent {
     };
     window.open(website_mapping[website]);
   }
+
+  
 }

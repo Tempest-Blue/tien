@@ -54,5 +54,8 @@
     }));
     var wow = new WOW({ mobile: false });
     wow.init();
-    setTimeout(function () { new Glide('.glide', { type: 'slider', perView: 1, animationDuration: 1000 }).mount() }, 500);
+    var slider = document.querySelector('.glide');
+    if (slider) {
+        new Glide('.glide', { type: 'slider', perView: 1, animationDuration: 1000 }).mount() 
+    }
 })();

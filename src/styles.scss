@@ -1,20 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
-/* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"; */
-@import "https://fonts.googleapis.com/css?family=Arvo:300,400,500,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700,800";
 
 $main_color: #e64110;
 $accent_color: '';
+$font: 'Quicksand', sans-serif;
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 html {
   scroll-behavior: smooth
 }
 
 body {
-  font-family: 'Arvo', serif;
+  font-family: $font;
   font-weight: 400;
   font-style: normal;
-  color: #5a5872;
-  background-color: #1A1F24;
+  // color: #5a5872;
+  // background-color: #1A1F24;
 }
 
 * {
@@ -64,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Arvo', serif;
+  font-family: $font;
   font-weight: 700;
   color: #2b2a3d;
   margin: 0
@@ -182,7 +196,6 @@ p {
 .section_title .title {
   font-size: 40px;
   font-weight: 700;
-  color: white;
 }
 
 @media(max-width:767px) {
@@ -1027,7 +1040,7 @@ p {
 }
 
 .single_features .features_title {
-  color: $main_color;
+  // color: $main_color;
   margin-top: 15px;
   font-size: 24px;
   font-weight: 600;
