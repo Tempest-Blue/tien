@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ImageModalComponent } from './image-modal/image-modal.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'tien-vo';
   closeModal: any;
