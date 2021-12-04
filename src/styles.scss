@@ -115,12 +115,14 @@ ol {
   list-style-type: none
 }
 
-ul.dashed > li {
-  text-indent: -5px;
+ul:not(#nav) > li {
+    list-style-type: none;
+    text-indent: -5px;
 }
-ul.dashed > li:before {
-  content: "- ";
-  text-indent: -5px;
+
+ul:not(#nav) > li:before {
+    content: "- ";
+    text-indent: -5px;
 }
 
 p {
@@ -1084,6 +1086,13 @@ p {
   }
   .single_portfolio:hover::before {
     opacity: .5;
+  }
+}
+
+#companies > div > div > {
+  .description {
+    padding-top: 20px;
+    text-align: left;
   }
 }
 
