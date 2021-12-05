@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'tien-vo';
+  title = 'tien';
   closeModal: any;
   constructor() {}
 

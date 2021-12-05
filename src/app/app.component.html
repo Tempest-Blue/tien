@@ -36,19 +36,22 @@
                   <a class="page-scroll active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#current_stack">About</a>
+                  <a class="page-scroll" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#experience">Experience</a>
+                  <a class="page-scroll" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="#interests">Interests</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="page-scroll" href="#blog">Blog</a>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                   <a class="page-scroll" href="#contact">Contact</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="page-scroll" href="assets/docs/Tien Vo Resume.pdf" download>Download Resume</a>
                 </li>
               </ul>
             </div>
@@ -67,7 +70,7 @@
                 data-wow-delay=".2s">Tien Vo</h2>
               <p id="title" class="wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
                 data-wow-delay=".7s">Software Engineer</p>
-              <a id="resume" href="../assets/docs/Tien Vo Resume.pdf" download
+              <a id="resume" href="assets/docs/Tien Vo Resume.pdf" download
                 class="main-btn wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
                 data-wow-delay="1s">Download Resume</a>
               <!-- <a href="#features" class="main-btn wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".8s">Learn
@@ -84,183 +87,49 @@
   </div>
 </section>
 
-
-<section id="current_stack" class="features_area pt-120">
-  <div class="container">
+<section id="experience" class="features_area pt-120">
+  <div class="container current_stack">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title text-center pb-25">
           <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".2s">Current
             Tech Stack</h4>
-          <!-- <img src="../assets/images/aws_black.png" alt="AWS" (click)="open_page('aws')" class="wow {{get_animated_class('fadeInUp')}}"  data-wow-duration="1.3s" data-wow-delay=".2s"> -->
+          <!-- <img src="assets/images/aws_black.png" alt="AWS" (click)="open_page('aws')" class="wow {{get_animated_class('fadeInUp')}}"  data-wow-duration="1.3s" data-wow-delay=".2s"> -->
         </div>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-7">
         <div class="single_features text-center mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
-          data-wow-delay=".2s">
-          <img src="../assets/images/aws_lambda.svg" alt="AWS Lambda" (click)="open_page('lambda')">
+          data-wow-delay=".4s">
+          <img src="assets/images/aws_lambda.svg" alt="AWS Lambda" (click)="open_page('lambda')">
           <h4 class="features_title">AWS Lambda</h4>
         </div>
       </div>
       <div class="col-lg-4 col-md-7">
         <div class="single_features text-center mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
-          data-wow-delay=".4s">
-          <img src="../assets/images/dynamo_db.svg" alt="Dynamo DB" (click)="open_page('dynamo_db')">
+          data-wow-delay=".6s">
+          <img src="assets/images/dynamo_db.svg" alt="Dynamo DB" (click)="open_page('dynamo_db')">
           <h4 class="features_title">Dynamo DB</h4>
         </div>
       </div>
       <div class="col-lg-4 col-md-7">
         <div class="single_features text-center mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
-          data-wow-delay=".6s">
-          <img src="../assets/images/api_gateway.svg" alt="AWS API Gateway" (click)="open_page('api_gateway')">
+          data-wow-delay=".8s">
+          <img src="assets/images/api_gateway.svg" alt="AWS API Gateway" (click)="open_page('api_gateway')">
           <h4 class="features_title">API Gateway</h4>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<section id="about" class="about_area pt-120">
-  <div class="container">
+  <br>
+
+  <div class="container work">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title text-center pb-25">
-          <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".2s">
-            Current Projects</h4>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInRight')}}"
-      data-wow-duration="1.3s" data-wow-delay=".4s">
-      <div class="col-lg-6 single_portfolio" data-wow-duration="1.3s" data-wow-delay=".2s">
-        <img id="dota" src="assets/images/personal_website.png" alt="Interests" class="small_image">
-        <div class="portfolio_content">
-          <ul class="meta">
-            <li><a href="https://github.com/Tempest-Blue/tien" target="_blank"><span
-                  class="material-icons md-36">open_in_new</span></a></li>
-          </ul>
-          <h5 class="portfolio_title">View Github Repo</h5>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="about_content pt-120 pb-130">
-          <div class="section_title pb">
-            <h4 class="title">
-              Personal Website
-            </h4>
-            <ul>
-              <li>Built with Angular</li>
-              <br>
-              <h6>Planned Enhancements</h6>
-              <ul>
-                <li>Better animations</li>
-                <li>Better mobile experience</li>
-                <li>Allow user to optionally play a video through using the banner</li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInLeft')}}"
-      data-wow-duration="1.3s" data-wow-delay=".6s">
-      <div class="col-lg-6">
-        <div class="about_content pt-120 pb-130">
-          <div class="section_title pb">
-            <h4 class="title">
-              Silver Screen
-            </h4>
-            <ul>
-              <li>Built with React</li>
-              <li>Integrated with The Movie Database API</li>
-              <li>Displays recently released movies in theaters sorted by popularity</li>
-              <br>
-              <h6>Planned Enhancements</h6>
-              <ul>
-                <li>User selected filtering options</li>
-                <li>Modal linked direclty to reviews</li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 single_portfolio" data-wow-duration="1.3s" data-wow-delay=".2s">
-        <img id="dota" src="assets/images/silver_screen.png" alt="Interests" class="small_image">
-        <div class="portfolio_content">
-          <ul class="meta">
-            <li><a href="https://tempest-blue.github.io/silver_screen/" target="_blank"><span
-                  class="material-icons md-36">open_in_new</span></a></li>
-          </ul>
-          <h5 class="portfolio_title">Demo</h5>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInRight')}}"
-      data-wow-duration="1.3s" data-wow-delay=".8s">
-      <div class="col-lg-6 wow fadeInLeft">
-        <img src='assets/images/coming_soon.png' />
-      </div>
-      <div class="col-lg-6">
-        <div class="about_content pt-120 pb-130">
-          <div class="section_title pb">
-            <h4 class="title">
-              Cut Corners
-            </h4>
-            <ul>
-              <li>Built with React</li>
-              <li>Blog of quality of life enhancements found in professional career</li>
-              <br>
-              <h6>Topics Discussed</h6>
-              <ul>
-                <li>ServiceNow</li>
-                <li>AWS</li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInLeft')}}"
-      data-wow-duration="1.3s" data-wow-delay="1s">
-      <div class="col-lg-6">
-        <div class="about_content pt-120 pb-130">
-          <div class="section_title pb">
-            <h4 class="title">
-              Sashimi Creations
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 wow fadeInLeft">
-        <img src='assets/images/coming_soon.png' />
-      </div>
-    </div>
-    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInRight')}}"
-      data-wow-duration="1.3s" data-wow-delay="1.2s">
-      <div class="col-lg-6 wow fadeInLeft">
-        <img src='assets/images/coming_soon.png' />
-      </div>
-      <div class="col-lg-6">
-        <div class="about_content pt-120 pb-130">
-          <div class="section_title pb">
-            <h4 class="title">
-              Dota Statistics
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="features_area pt-120">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <div class="section_title text-center pb-25">
-          <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".2s">Where
+          <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay="1s">Where
             I've Worked</h4>
         </div>
       </div>
@@ -268,11 +137,11 @@
     <div id="companies" class="row">
       <div class="col-lg-4 col-md-6">
         <div class="single_features text-center mt-60 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
-          data-wow-delay=".4s">
-          <img class="company" src="../assets/images/wolin_design_group.png" alt="Wolin Design Group"
+          data-wow-delay="1.2s">
+          <img class="company" src="assets/images/wolin_design_group.png" alt="Wolin Design Group"
             (click)="open_page('wolin_design_group')">
           <h4 class="features_title">2017 - 2019</h4>
-          <img class="product" src="../assets/images/davinci_unified.png" alt="Davinci Unified">
+          <img class="product" src="assets/images/davinci_unified.png" alt="Davinci Unified">
           <div class="description">
             <ul>
               <h6>Davinci Unified - A warehouse management system used to track inventory and shipping data.</h6>
@@ -288,10 +157,10 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="single_features text-center mt-60 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
-          data-wow-delay=".8s">
-          <img class="company" src="../assets/images/loan_depot.png" alt="loanDepot" (click)="open_page('loan_depot')">
+          data-wow-delay="1.4s">
+          <img class="company" src="assets/images/loan_depot.png" alt="loanDepot" (click)="open_page('loan_depot')">
           <h4 class="features_title">2019 - 2021</h4>
-          <img class="product" src="../assets/images/mello_assist.png" alt="mello assist">
+          <img class="product" src="assets/images/mello_assist.png" alt="mello assist">
           <div class="description">
             <ul>
               <h6>mello assist - one stop shop service portal for loanDepot.</h6>
@@ -305,8 +174,8 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="single_features text-center mt-60 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
-          data-wow-delay="1.2s">
-          <img class="company" src="../assets/images/guaranteed_rate.svg" alt="Guaranteed Rate"
+          data-wow-delay="1.6s">
+          <img class="company" src="assets/images/guaranteed_rate.svg" alt="Guaranteed Rate"
             (click)="open_page('guaranteed_rate')">
           <h4 class="features_title">2021 - Present</h4>
           <div class="description">
@@ -333,6 +202,180 @@
     </div>
   </div>
 </section>
+
+<section id="projects" class="projects_area pt-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="section_title text-center pb-25">
+          <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".2s">
+            Current Projects
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInRight')}}"
+      data-wow-duration="1.3s" data-wow-delay=".4s">
+      <div class="col-lg-6 single_portfolio">
+        <img id="dota" src="assets/images/personal_website.png" alt="Interests" class="small_image">
+        <div class="portfolio_content">
+          <ul class="meta">
+            <li><a href="https://github.com/Tempest-Blue/tien" target="_blank"><span
+                  class="material-icons md-36">open_in_new</span></a></li>
+          </ul>
+          <h5 class="portfolio_title">View Github Repo</h5>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="projects_content pt-120 pb-130">
+          <div class="section_title pb">
+            <h4 class="title">
+              Personal Website
+            </h4>
+            <ul>
+              <li>Built with Angular</li>
+              <br>
+              <h6>Planned Enhancements</h6>
+              <ul>
+                <li>Better animations</li>
+                <li>Better mobile experience</li>
+                <li>Allow user to optionally play a video through using the banner</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInLeft')}}"
+      data-wow-duration="1.3s" data-wow-delay=".6s">
+      <div class="col-lg-6">
+        <div class="projects_content pt-120 pb-130">
+          <div class="section_title pb">
+            <h4 class="title">
+              Silver Screen
+            </h4>
+            <ul>
+              <li>Built with React</li>
+              <li>Integrated with The Movie Database API</li>
+              <li>Displays recently released movies in theaters sorted by popularity</li>
+              <br>
+              <h6>Planned Enhancements</h6>
+              <ul>
+                <li>User selected filtering options</li>
+                <li>Modal linked direclty to reviews</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 single_portfolio">
+        <img id="dota" src="assets/images/silver_screen.png" alt="Interests" class="small_image">
+        <div class="portfolio_content">
+          <ul class="meta">
+            <li><a href="https://tempest-blue.github.io/silver_screen/" target="_blank"><span
+                  class="material-icons md-36">open_in_new</span></a></li>
+          </ul>
+          <h5 class="portfolio_title">Demo</h5>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center wow {{get_animated_class('fadeInUp')}}"  data-wow-duration="1.3s" data-wow-delay=".8s">
+      <div class="col-lg-6">
+        <div class="section_title text-center pb-25">
+          <h4 class="title">
+            Upcoming Projects
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInUp')}}"
+      data-wow-duration="1.3s" data-wow-delay="1s">
+      <div class="col-lg-12">
+        <div class="projects_content pt-120 pb-130">
+          <div class="section_title pb">
+            <ul>
+              <h4>Cut Corners</h4>
+              <li>Built with React</li>
+              <li>Blog of quality of life enhancements found in professional career</li>
+              <h6>Topics Discussed</h6>
+              <ul>
+                <li>ServiceNow</li>
+                <li>AWS</li>
+              </ul>
+            </ul>
+            <br>
+            <ul>
+              <h4>Sashimi Creations</h4>
+              <li>Photo gallery for inspiring and creative sashimi creations</li>
+            </ul>
+            <br>
+            <ul>
+              <h4>Dota Statistics</h4>
+              <li>Statistics tracker for the best MOBA game ever created, DOTA 2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInRight')}}"
+      data-wow-duration="1.3s" data-wow-delay=".8s">
+      <div class="col-lg-6 wow fadeInLeft">
+        <img src='assets/images/coming_soon.png' />
+      </div>
+      <div class="col-lg-6">
+        <div class="projects_content pt-120 pb-130">
+          <div class="section_title pb">
+            <h4 class="title">
+              Cut Corners
+            </h4>
+            <ul>
+              <li>Built with React</li>
+              <li>Blog of quality of life enhancements found in professional career</li>
+              <br>
+              <h6>Topics Discussed</h6>
+              <ul>
+                <li>ServiceNow</li>
+                <li>AWS</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInLeft')}}"
+      data-wow-duration="1.3s" data-wow-delay="1s">
+      <div class="col-lg-6">
+        <div class="projects_content pt-120 pb-130">
+          <div class="section_title pb">
+            <h4 class="title">
+              Sashimi Creations
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInLeft">
+        <img src='assets/images/coming_soon.png' />
+      </div>
+    </div> -->
+    <!-- <div class="row justify-content-center align-items-center wow {{get_animated_class('fadeInRight')}}"
+      data-wow-duration="1.3s" data-wow-delay="1.2s">
+      <div class="col-lg-6 wow fadeInLeft">
+        <img src='assets/images/coming_soon.png' />
+      </div>
+      <div class="col-lg-6">
+        <div class="projects_content pt-120 pb-130">
+          <div class="section_title pb">
+            <h4 class="title">
+              Dota Statistics
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
 
 <section id="interests" class="portfolio_area pt-120">
   <div class="container">
@@ -390,7 +433,7 @@
   </div>
 </section>
 
-<section id="blog" class="blog_area pt-120 pb-130">
+<!-- <section id="blog" class="blog_area pt-120 pb-130">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
@@ -408,7 +451,7 @@
         <div class="single_blog mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
           data-wow-delay=".2s">
           <div class="blog_image">
-            <!-- <img src="assets/images/blog-1.jpg" alt="blog"> -->
+            <img src="assets/images/blog-1.jpg" alt="blog">
           </div>
           <div class="blog_content">
             <h3 class="blog_title"><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -423,7 +466,7 @@
         <div class="single_blog blog_2 d-sm-flex mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
           data-wow-delay=".2s">
           <div class="blog_image">
-            <!-- <img src="assets/images/blog-2.jpg" alt="blog"> -->
+            <img src="assets/images/blog-2.jpg" alt="blog">
           </div>
           <div class="blog_content media-body">
             <h3 class="blog_title"><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
@@ -434,7 +477,7 @@
         <div class="single_blog blog_2 d-sm-flex mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
           data-wow-delay=".3s">
           <div class="blog_image">
-            <!-- <img src="assets/images/blog-3.jpg" alt="blog"> -->
+            <img src="assets/images/blog-3.jpg" alt="blog">
           </div>
           <div class="blog_content media-body">
             <h3 class="blog_title"><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
@@ -445,7 +488,7 @@
         <div class="single_blog blog_2 d-sm-flex mt-30 wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s"
           data-wow-delay=".4s">
           <div class="blog_image">
-            <!-- <img src="assets/images/blog-4.jpg" alt="blog"> -->
+            <img src="assets/images/blog-4.jpg" alt="blog">
           </div>
           <div class="blog_content media-body">
             <h3 class="blog_title"><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
@@ -456,23 +499,20 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
-<section id="contact" class="contact_area bg_cover pt-120 pb-130"
+<!-- <section id="contact" class="contact_area bg_cover pt-120 pb-130"
   style="background-image: url(assets/images/contact_bg.jpg)">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title section_title_2 text-center pb-25">
-          <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".2s">Contact
-          </h4>
-          <!-- <p class="wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".4s">Lorem ipsum dolor sit
-            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p> -->
+          <h4 class="title wow {{get_animated_class('fadeInUp')}}" data-wow-duration="1.3s" data-wow-delay=".2s">Contact</h4>
         </div>
       </div>
     </div>
-    <form id="contact-form" action="assets/contact.php" method="post" class="wow {{get_animated_class('fadeInUp')}}"
+    <form id="contact-form" action="assets/contact.php" method="post" class=" wow {{get_animated_class('fadeInUp')}}"
       data-wow-duration="1.3s" data-wow-delay=".4s">
       <div class="row">
         <div class="col-lg-6">
@@ -509,7 +549,7 @@
       </div>
     </form>
   </div>
-</section>
+</section> -->
 
 <a href="#" class="back-to-top"><i class="material-icons md-36">expand_less</i></a>
 

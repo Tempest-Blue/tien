@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700,800";
+@import 'animate.css';
+@import "node_modules/bootstrap/scss/bootstrap";
 
 $main_color: #e64110;
-$accent_color: '';
+$text_color: #c7c3bc;
 $font: 'Quicksand', sans-serif;
 
 /* Rules for sizing the icon. */
@@ -27,7 +29,7 @@ body {
   font-family: $font;
   font-weight: 400;
   font-style: normal;
-  // color: #5a5872;
+  color: $text_color;
   // background-color: #1A1F24;
 }
 
@@ -80,7 +82,7 @@ h5,
 h6 {
   font-family: $font;
   font-weight: 700;
-  color: #2b2a3d;
+  color: $text_color;
   margin: 0
 }
 
@@ -115,21 +117,23 @@ ol {
   list-style-type: none
 }
 
-ul:not(#nav) > li {
+ul:not(#nav, .meta) {
+  li {
     list-style-type: none;
     text-indent: -5px;
-}
+  }
 
-ul:not(#nav) > li:before {
+  li:before {
     content: "- ";
     text-indent: -5px;
+  }
 }
 
 p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #5a5872;
+  color: $text_color;
   margin: 0
 }
 
@@ -1075,27 +1079,6 @@ p {
   color: $main_color
 }
 
-.about_area {
-  background-color: #f9f9f9;
-  position: relative;
-  .single_portfolio {
-    width: 50%;
-  }
-  .single_portfolio::before {
-    background-color: black;
-  }
-  .single_portfolio:hover::before {
-    opacity: .5;
-  }
-}
-
-#companies > div > div > {
-  .description {
-    padding-top: 20px;
-    text-align: left;
-  }
-}
-
 .single_portfolio {
   position: relative;
   width: 25%
@@ -1262,225 +1245,6 @@ p {
   opacity: 1
 }
 
-.pricing_area {
-  background-color: #f9f9f9
-}
-
-.single_pricing {
-  background-color: #fff;
-  padding: 60px 50px
-}
-
-@media(max-width:767px) {
-  .single_pricing {
-    padding: 40px 30px
-  }
-}
-
-.single_pricing .pricing_title {
-  font-size: 24px;
-  font-weight: 600
-}
-
-@media(max-width:767px) {
-  .single_pricing .pricing_title {
-    font-size: 20px
-  }
-}
-
-.single_pricing .price {
-  color: $main_color;
-  font-size: 44px;
-  margin-top: 25px;
-  font-weight: 700
-}
-
-@media(max-width:767px) {
-  .single_pricing .price {
-    font-size: 38px
-  }
-}
-
-.single_pricing .pricing_list li {
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: 300
-}
-
-.single_pricing .main-btn .secondary-btn {
-  height: 45px;
-  border: 1px solid #5a5872;
-  line-height: 43px;
-  text-align: center;
-  padding: 0 25px;
-  color: $main_color;
-  -webkit-transition: all .3s ease-out 0s;
-  -moz-transition: all .3s ease-out 0s;
-  -ms-transition: all .3s ease-out 0s;
-  -o-transition: all .3s ease-out 0s;
-  transition: all .3s ease-out 0s;
-  margin-top: 30px
-}
-
-.single_pricing .main-btn:hover .secondary-btn:hover {
-  background-color: rgba(90, 88, 114, .2)
-}
-
-.single_pricing.active {
-  background-color: $main_color
-}
-
-.single_pricing.active .pricing_title {
-  color: #fff
-}
-
-.single_pricing.active .price {
-  color: #fff
-}
-
-.single_pricing.active .pricing_list li {
-  color: #fff
-}
-
-.single_pricing.active .main-btn .secondary-btn {
-  background-color: #fff;
-  border-color: #fff
-}
-
-.single_team {
-  position: relative
-}
-
-.single_team img {
-  width: 100%
-}
-
-.single_team .team_content {
-  position: absolute;
-  background-color: #fff;
-  left: 0;
-  bottom: 0;
-  width: 85%;
-  padding: 25px;
-  padding-right: 60px
-}
-
-.single_team .team_content .team_name a {
-  font-size: 20px;
-  font-weight: 500;
-  color: #2b2a3d;
-  -webkit-transition: all .3s ease-out 0s;
-  -moz-transition: all .3s ease-out 0s;
-  -ms-transition: all .3s ease-out 0s;
-  -o-transition: all .3s ease-out 0s;
-  transition: all .3s ease-out 0s
-}
-
-.single_team .team_content .team_name a:hover {
-  color: $main_color
-}
-
-.single_team .team_content p {
-  margin-top: 5px
-}
-
-.single_team .team_content .social {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%)
-}
-
-.single_team .team_content .social li {
-  margin: 3px 0
-}
-
-.single_team .team_content .social li a {
-  color: #5a5872;
-  font-size: 16px;
-  -webkit-transition: all .3s ease-out 0s;
-  -moz-transition: all .3s ease-out 0s;
-  -ms-transition: all .3s ease-out 0s;
-  -o-transition: all .3s ease-out 0s;
-  transition: all .3s ease-out 0s
-}
-
-.single_team .team_content .social li a:hover {
-  color: $main_color
-}
-
-.testimonial_area {
-  position: relative
-}
-
-.testimonial_area::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(43, 42, 61, .9)
-}
-
-.testimonial_active .glide__bullets {
-  width: 100%;
-  text-align: center;
-  margin-top: 35px
-}
-
-.testimonial_active .glide__bullets button.glide__bullet {
-  margin: 0 5px;
-  width: 18px;
-  height: 5px;
-  background-color: transparent;
-  border-radius: 50px;
-  font-size: 0;
-  -webkit-transition: all .3s ease-out 0s;
-  -moz-transition: all .3s ease-out 0s;
-  -ms-transition: all .3s ease-out 0s;
-  -o-transition: all .3s ease-out 0s;
-  transition: all .3s ease-out 0s;
-  border: 0;
-  background-color: #ececec
-}
-
-.testimonial_active .glide__bullets button.glide__bullet.glide__bullet--active {
-  background-color: $main_color
-}
-
-.single_testimonial img {
-  display: inline-block;
-  border-radius: 50%
-}
-
-@media(max-width:767px) {
-  .single_testimonial img {
-    width: 120px
-  }
-}
-
-.single_testimonial .author_name {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  margin-top: 25px
-}
-
-.single_testimonial span {
-  font-size: 14px;
-  color: #fff
-}
-
-.single_testimonial p {
-  color: #fff;
-  margin-top: 15px
-}
-
 .single_blog .blog_image img {
   width: 100%
 }
@@ -1492,7 +1256,7 @@ p {
 .single_blog .blog_content .blog_title a {
   font-size: 24px;
   font-weight: 600;
-  color: #2b2a3d;
+  color: $text_color;
   -webkit-transition: all .3s ease-out 0s;
   -moz-transition: all .3s ease-out 0s;
   -ms-transition: all .3s ease-out 0s;
@@ -1517,7 +1281,7 @@ p {
 .single_blog .blog_content .more {
   font-size: 16px;
   font-weight: 500;
-  color: #5a5872;
+  color: $text_color;
   margin-top: 15px;
   -webkit-transition: all .3s ease-out 0s;
   -moz-transition: all .3s ease-out 0s;
@@ -1576,7 +1340,7 @@ p {
 p.form-message.success,
 p.form-message.error {
   font-size: 16px;
-  color: #2b2a3d;
+  color: $text_color;
   background: #f9f9f9;
   padding: 10px 15px;
   margin-top: 30px;

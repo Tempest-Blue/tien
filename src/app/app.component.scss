@@ -1,6 +1,7 @@
-#header_navbar>div {
+#header_navbar > div {
   margin-right: 4em;
 }
+
 #navbarSupportedContent {
   justify-content: flex-end;
 }
@@ -24,87 +25,36 @@
 }
 
 @keyframes move_up_down {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 10px;
     opacity: 1;
   }
   50% {
     bottom: 50px;
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
-#current_stack {
-  // background-color: #253246;
-
-  h4, p {
-    // color: #E8E6E3;
-  }
-
-  .section_title {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    img {
-      width: 4rem;
-    }
-  }
-
-  p {
-    text-align: justify;
-  }
-
-  img {
-    -webkit-transition: all 200ms linear;
-    -moz-transition: all 200ms linear;
-    -o-transition: all 200ms linear;
-    -ms-transition: all 200ms linear;
-    transition: all 200ms linear;
-  }
-  
-  div>div:nth-child(2)>div>div>img {
-    width: 6rem;
-    -webkit-transition: all 200ms linear;
-    -moz-transition: all 200ms linear;
-    -o-transition: all 200ms linear;
-    -ms-transition: all 200ms linear;
-    transition: all 200ms linear;
-
-    &:hover {
-      cursor: pointer;
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
-      -webkit-transition: all 200ms linear;
-      -moz-transition: all 200ms linear;
-      -o-transition: all 200ms linear;
-      -ms-transition: all 200ms linear;
-      transition: all 200ms linear;
-    }
-  }
-}
-
-#about {
-  // background-color: #233044;
-
-  .about_area {
-    // background-color: #233044;
-  }
+#projects {
+  background-color: #202124;
 }
 
 #experience {
-  // background-color: #222E41;
+  background-color: #181a1b;
   .company {
     height: 100px;
   }
 
+  .work {
+    padding-top: 120px;
+  }
+
   #companies {
-    div>img.product {
+    div > img.product {
       height: 250px;
     }
-    div>img.company {
+    div > img.company {
       -webkit-transition: all 200ms linear;
       -moz-transition: all 200ms linear;
       -o-transition: all 200ms linear;
@@ -131,10 +81,60 @@
     // color: white;
     text-align: justify;
   }
+
+  .current_stack {
+    h4,p {
+      // color: #E8E6E3;
+    }
+
+    .section_title {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      img {
+        width: 4rem;
+      }
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    img {
+      -webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+      -o-transition: all 200ms linear;
+      -ms-transition: all 200ms linear;
+      transition: all 200ms linear;
+    }
+
+    div:nth-child(2) > div > div > img {
+      width: 6rem;
+      -webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+      -o-transition: all 200ms linear;
+      -ms-transition: all 200ms linear;
+      transition: all 200ms linear;
+
+      &:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+    }
+  }
 }
 
 #interests {
-  // background-color: #212D3F;
+  background-color: #282c2f;
 
   .small_image {
     height: 100%;
@@ -146,7 +146,7 @@
   // background-color: #1F2B3C;
 }
 
-.about_image {
+.projects_image {
   width: 40%;
 }
 
@@ -174,5 +174,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.projects_area {
+  background-color: #f9f9f9;
+  position: relative;
+  .single_portfolio {
+    width: 50%;
+  }
+  .single_portfolio::before {
+    background-color: black;
+  }
+  .single_portfolio:hover::before {
+    opacity: .5;
+  }
+}
+
+#companies > div > div > {
+  .description {
+    padding-top: 20px;
+    text-align: left;
   }
 }
